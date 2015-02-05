@@ -8,11 +8,13 @@
   -ms-box-sizing    : border-box;
 }
 
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 641px) and (orientation: landscape) {
   p {
     background-color: blue;
+    display: none;
   }
 }
+
 
 .grid {
     margin: 0 auto;
@@ -22,9 +24,13 @@
 
 .row {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom:20px;
     display: flex;
-    flex-wrap: wrap;
+    display: -webkit-box;
+    display: moz-box-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-wrap: wrap; 
 }
 
 .row p{

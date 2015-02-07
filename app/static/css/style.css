@@ -1,21 +1,53 @@
-*
+/**
 {
   outline: 1px solid red !important;
+}*/
+
+*
+{
+  font-family: 'Lato', sans-serif;
 }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing   : border-box;
   -ms-box-sizing    : border-box;
 }
 
-@media only screen and (max-width: 641px) and (orientation: landscape) {
-  p {
-    background-color: blue;
-    display: none;
+/*iphone 5/5s*/
+@media only screen and (min-width : 320px) and (max-width : 568px)
+{ /* STYLES GO HERE */ 
+  h1 {
+    color: red;
   }
+}
+/*iphone 6*/
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) 
+{ /* STYLES GO HERE */ 
+  h1 {
+    color: green;
+  }
+}
+/*iphone 6+*/
+@media only screen and (min-width : 540px) and (max-width : 960px) 
+{ 
+  h1 {
+    color: blue;
+  } 
 }
 
 
+
+
+/*@media only screen 
+and (min-device-width : 500px) 
+and (max-device-width : 500px)
+{
+    body {
+    background-color: blue;
+    /*display: none;*/
+    }
+}*/
 .grid {
     margin: 0 auto;
     max-width: 1200px;
@@ -85,3 +117,37 @@
     width: 100%;
 }
 
+h1
+{
+  text-align: right;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h2
+{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3
+{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h4
+{
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}

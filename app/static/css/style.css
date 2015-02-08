@@ -1,6 +1,6 @@
-*{
+/**{
   outline: 1px solid red !important;
-}
+}*/
 
 *{
   font-family: 'Lato', sans-serif;
@@ -20,10 +20,10 @@
   }
   img
 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; 
-  width: 300;
+  /*display: block;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto; */
+  /*width: 300;*/
 }
 }
 /*iphone 6*/
@@ -43,7 +43,7 @@
 
 .logo
 {
-  width:  100px;
+  /*width:  100px;*/
   /*height: 100px;*/
 }
 
@@ -77,35 +77,35 @@ and (max-device-width : 500px)
 
 h1
 {
-  text-align: right;
-  margin-bottom: 0;
-  margin-top: 0;
+  /*text-align: right;*/
+  /*margin-bottom: 0;*/
+  /*margin-top: 0;*/
 }
 
 h2
 {
-  text-align: center;
+ /* text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0;*/
 }
 
 h3
 {
-  text-align: center;
+  /*text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0;*/
 }
 
 h4
 {
-  text-align: right;
-  margin-top: 0;
-  margin-bottom: 0;
+  /*text-align: right;*/
+  /*margin-top: 0;*/
+  /*margin-bottom: 0;*/
 }
 
 img
 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; 
+  /*display: block;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto; */
 }

@@ -3,20 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
   <title>Framework Test Page</title>
 </head>
 
 <body>
   <div class="container">
+
     <div class="row">
       <div class="col-md-6">
-        <img class"img-responsive logo" src="/images/photo.png" alt="udacity logo">
+        <img id="title-logo" class"img-responsive " src="/images/photo.png" alt="udacity logo">
       </div>
       <div class="col-md-6 text-right text-uppercase">
-           <h1>andres kwan</h1>
+           <h1 class="title-super text-thin">andres kwan</h1>
            <h4>ninja developer</h4>
       </div>
     </div>
@@ -34,13 +36,16 @@
 
     <div class="row">
       <div class="col-md-12">
-        <h2>Featured Work</h2>
+        <h2 class="text-mutted">Featured Work</h2>
       </div>
     </div>
   
-    <div class="row">
+    <div class="row text-center">
       <div class="col-md-4">
-        <img class="img-responsive" src="http://placekitten.com/550/300" alt="main image">
+        <img class="img-responsive" 
+             data-toggle="modal" 
+             data-target="#project1" 
+             src="http://placekitten.com/550/300" alt="main image">
         <h3 class="text-uppercase">Applify</h3>
         <p>Link to github</p>
       </div>
@@ -55,8 +60,34 @@
         <p>Link to github</p>
       </div>
     </div>
+
+    <!-- Modal -->
+      <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" src="http://placekitten.com/550/300">
+              This was my first project in this class. I learned a lot about HTML and CSS.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
   </div>
   <!-- <script src="/bower_components/jquery/dist/jquery.js"></script> -->
+
+
+  
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
 

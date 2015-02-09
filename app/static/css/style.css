@@ -14,10 +14,10 @@ body
   font-weight: 300;
 }
 
-footer {
+.footer {
   background-color: #F88f24;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 .text-mutted
 {
@@ -30,32 +30,40 @@ footer {
 #title-logo
 {
   margin-top: 20px;
-  width: 120px;
+  /*width: 20px;*/
 }
 .title-super
 {
   font-size: 60px;
 }
 /*iphone 5/5s*/
-@media only screen and (min-width : 320px) and (max-width : 568px)
+@media only screen and (min-width : 320px) and (max-width : 600px)
 { /* STYLES GO HERE */ 
+
   h1 {
-    color: red;
+    /*color: red;*/
+    font-size: 2em;
   }
- 
+  #title-logo
+  {
+    margin-top: 20px;
+    width: 60px;
+  }
 }
 /*iphone 6*/
-@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) 
+@media only screen and (min-width : 375px) and (max-width : 768px) and (orientation : portrait) 
 { /* STYLES GO HERE */ 
   h1 {
     color: green;
   }
+  
 }
 /*iphone 6+*/
-@media only screen and (min-width : 540px) and (max-width : 960px) 
+@media only screen and (min-width : 540px) and (max-width : 992px) 
 { 
   h1 {
     color: blue;
   } 
+
 }
 
